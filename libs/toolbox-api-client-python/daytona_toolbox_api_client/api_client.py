@@ -170,7 +170,7 @@ class ApiClient:
             for `multipart/form-data`.
         :param collection_formats: dict of collection formats for path, query,
             header, and post parameters.
-        :param _request_auth: set to override the auth_settings for an a single
+        :param _request_auth: set to override the auth_settings for a single
                               request; this effectively ignores the authentication
                               in the spec for a single request.
         :return: tuple of form (path, http_method, query_params, header_params,

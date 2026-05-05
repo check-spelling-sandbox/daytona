@@ -72,7 +72,7 @@ class DockerRegistryApi:
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
         :type _request_timeout: int, tuple(int, int), optional
-        :param _request_auth: set to override the auth_settings for an a single
+        :param _request_auth: set to override the auth_settings for a single
                               request; this effectively ignores the
                               authentication in the spec for a single request.
         :type _request_auth: dict, optional
@@ -142,7 +142,7 @@ class DockerRegistryApi:
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
         :type _request_timeout: int, tuple(int, int), optional
-        :param _request_auth: set to override the auth_settings for an a single
+        :param _request_auth: set to override the auth_settings for a single
                               request; this effectively ignores the
                               authentication in the spec for a single request.
         :type _request_auth: dict, optional
@@ -212,7 +212,7 @@ class DockerRegistryApi:
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
         :type _request_timeout: int, tuple(int, int), optional
-        :param _request_auth: set to override the auth_settings for an a single
+        :param _request_auth: set to override the auth_settings for a single
                               request; this effectively ignores the
                               authentication in the spec for a single request.
         :type _request_auth: dict, optional
@@ -359,7 +359,7 @@ class DockerRegistryApi:
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
         :type _request_timeout: int, tuple(int, int), optional
-        :param _request_auth: set to override the auth_settings for an a single
+        :param _request_auth: set to override the auth_settings for a single
                               request; this effectively ignores the
                               authentication in the spec for a single request.
         :type _request_auth: dict, optional
@@ -429,7 +429,7 @@ class DockerRegistryApi:
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
         :type _request_timeout: int, tuple(int, int), optional
-        :param _request_auth: set to override the auth_settings for an a single
+        :param _request_auth: set to override the auth_settings for a single
                               request; this effectively ignores the
                               authentication in the spec for a single request.
         :type _request_auth: dict, optional
@@ -499,7 +499,7 @@ class DockerRegistryApi:
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
         :type _request_timeout: int, tuple(int, int), optional
-        :param _request_auth: set to override the auth_settings for an a single
+        :param _request_auth: set to override the auth_settings for a single
                               request; this effectively ignores the
                               authentication in the spec for a single request.
         :type _request_auth: dict, optional
@@ -626,7 +626,7 @@ class DockerRegistryApi:
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
         :type _request_timeout: int, tuple(int, int), optional
-        :param _request_auth: set to override the auth_settings for an a single
+        :param _request_auth: set to override the auth_settings for a single
                               request; this effectively ignores the
                               authentication in the spec for a single request.
         :type _request_auth: dict, optional
@@ -696,7 +696,7 @@ class DockerRegistryApi:
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
         :type _request_timeout: int, tuple(int, int), optional
-        :param _request_auth: set to override the auth_settings for an a single
+        :param _request_auth: set to override the auth_settings for a single
                               request; this effectively ignores the
                               authentication in the spec for a single request.
         :type _request_auth: dict, optional
@@ -766,7 +766,7 @@ class DockerRegistryApi:
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
         :type _request_timeout: int, tuple(int, int), optional
-        :param _request_auth: set to override the auth_settings for an a single
+        :param _request_auth: set to override the auth_settings for a single
                               request; this effectively ignores the
                               authentication in the spec for a single request.
         :type _request_auth: dict, optional
@@ -900,7 +900,7 @@ class DockerRegistryApi:
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
         :type _request_timeout: int, tuple(int, int), optional
-        :param _request_auth: set to override the auth_settings for an a single
+        :param _request_auth: set to override the auth_settings for a single
                               request; this effectively ignores the
                               authentication in the spec for a single request.
         :type _request_auth: dict, optional
@@ -970,7 +970,7 @@ class DockerRegistryApi:
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
         :type _request_timeout: int, tuple(int, int), optional
-        :param _request_auth: set to override the auth_settings for an a single
+        :param _request_auth: set to override the auth_settings for a single
                               request; this effectively ignores the
                               authentication in the spec for a single request.
         :type _request_auth: dict, optional
@@ -1040,7 +1040,7 @@ class DockerRegistryApi:
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
         :type _request_timeout: int, tuple(int, int), optional
-        :param _request_auth: set to override the auth_settings for an a single
+        :param _request_auth: set to override the auth_settings for a single
                               request; this effectively ignores the
                               authentication in the spec for a single request.
         :type _request_auth: dict, optional
@@ -1173,7 +1173,7 @@ class DockerRegistryApi:
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
         :type _request_timeout: int, tuple(int, int), optional
-        :param _request_auth: set to override the auth_settings for an a single
+        :param _request_auth: set to override the auth_settings for a single
                               request; this effectively ignores the
                               authentication in the spec for a single request.
         :type _request_auth: dict, optional
@@ -1239,7 +1239,7 @@ class DockerRegistryApi:
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
         :type _request_timeout: int, tuple(int, int), optional
-        :param _request_auth: set to override the auth_settings for an a single
+        :param _request_auth: set to override the auth_settings for a single
                               request; this effectively ignores the
                               authentication in the spec for a single request.
         :type _request_auth: dict, optional
@@ -1305,7 +1305,7 @@ class DockerRegistryApi:
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
         :type _request_timeout: int, tuple(int, int), optional
-        :param _request_auth: set to override the auth_settings for an a single
+        :param _request_auth: set to override the auth_settings for a single
                               request; this effectively ignores the
                               authentication in the spec for a single request.
         :type _request_auth: dict, optional
@@ -1438,7 +1438,7 @@ class DockerRegistryApi:
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
         :type _request_timeout: int, tuple(int, int), optional
-        :param _request_auth: set to override the auth_settings for an a single
+        :param _request_auth: set to override the auth_settings for a single
                               request; this effectively ignores the
                               authentication in the spec for a single request.
         :type _request_auth: dict, optional
@@ -1512,7 +1512,7 @@ class DockerRegistryApi:
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
         :type _request_timeout: int, tuple(int, int), optional
-        :param _request_auth: set to override the auth_settings for an a single
+        :param _request_auth: set to override the auth_settings for a single
                               request; this effectively ignores the
                               authentication in the spec for a single request.
         :type _request_auth: dict, optional
@@ -1586,7 +1586,7 @@ class DockerRegistryApi:
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
         :type _request_timeout: int, tuple(int, int), optional
-        :param _request_auth: set to override the auth_settings for an a single
+        :param _request_auth: set to override the auth_settings for a single
                               request; this effectively ignores the
                               authentication in the spec for a single request.
         :type _request_auth: dict, optional
