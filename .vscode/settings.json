@@ -2,5 +2,6 @@
   "files.watcherExclude": {
     "**/libs/*api-client*/**": true,
     "**/node_modules/**": true
-  }
+  },
+  "sarif-viewer.connectToGithubCodeScanning": "on"
 }
