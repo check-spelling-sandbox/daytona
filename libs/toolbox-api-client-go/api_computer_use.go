@@ -281,7 +281,7 @@ type ComputerUseAPI interface {
 	RestartProcessExecute(r ComputerUseAPIRestartProcessRequest) (*ProcessRestartResponse, *http.Response, error)
 
 	/*
-		Scroll Scroll mouse wheel
+		Scroll mouse wheel
 
 		Scroll the mouse wheel at the specified coordinates
 
