@@ -75,7 +75,7 @@ type LspAPI interface {
 	DocumentSymbolsExecute(r LspAPIDocumentSymbolsRequest) ([]LspSymbol, *http.Response, error)
 
 	/*
-		Start Start LSP server
+		Start LSP server
 
 		Start a Language Server Protocol server for the specified language
 
