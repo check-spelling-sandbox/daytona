@@ -16,7 +16,7 @@ class FileUpload:
 
     Attributes:
         source (bytes | str): File contents as a bytes object or a local file path. If a bytes object is provided,
-        make sure it fits into memory, otherwise use the local file path which content will be streamed to the Sandbox.
+        make sure it fits into memory; otherwise, use the local file path which content will be streamed to the Sandbox.
         destination (str): Absolute destination path in the Sandbox. Relative paths are resolved based on
         the sandbox working directory.
     """

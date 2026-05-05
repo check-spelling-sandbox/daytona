@@ -53,7 +53,7 @@ export type FilePermissionsParams = {
  *
  * @interface
  * @property {string | Buffer} source - File to upload. If a Buffer, it is interpreted as the file content which is loaded into memory.
- * Make sure it fits into memory, otherwise use the local file path which content will be streamed to the Sandbox.
+ * Make sure it fits into memory; otherwise, use the local file path which content will be streamed to the Sandbox.
  * @property {string} destination - Absolute destination path in the Sandbox. Relative paths are resolved based on the sandbox working directory.
  */
 export interface FileUpload {

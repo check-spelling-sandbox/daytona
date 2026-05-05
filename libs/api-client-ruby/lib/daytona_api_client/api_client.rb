@@ -162,7 +162,7 @@ module DaytonaApiClient
     end
 
     # Save response body into a file in (the defined) temporary folder, using the filename
-    # from the "Content-Disposition" header if provided, otherwise a random filename.
+    # from the "Content-Disposition" header if provided; otherwise, a random filename.
     # The response body is written to the file in chunks in order to handle files which
     # size is larger than maximum Ruby String or even larger than the maximum memory a Ruby
     # process can use.
@@ -333,7 +333,7 @@ module DaytonaApiClient
     # @return [String] the Accept header (e.g. application/json)
     def select_header_accept(accepts)
       return nil if accepts.nil? || accepts.empty?
-      # use JSON when present, otherwise use all of the provided
+      # use JSON when present; otherwise, use all of the provided
       json_accept = accepts.find { |s| json_mime?(s) }
       json_accept || accepts.join(',')
     end
@@ -344,7 +344,7 @@ module DaytonaApiClient
     def select_header_content_type(content_types)
       # return nil by default
       return if content_types.nil? || content_types.empty?
-      # use JSON when present, otherwise use the first one
+      # use JSON when present; otherwise, use the first one
       json_content_type = content_types.find { |s| json_mime?(s) }
       json_content_type || content_types.first
     end

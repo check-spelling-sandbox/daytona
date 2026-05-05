@@ -168,7 +168,7 @@ async function createSandboxWithRetry() {
       return await daytona.create({ snapshot: 'my-snapshot' })
     } catch (error) {
       if (error instanceof DaytonaRateLimitError && retries < maxRetries - 1) {
-        // Use Retry-After header if available, otherwise exponential backoff
+        // Use Retry-After header if available; otherwise, exponential backoff
         const retryAfter = error.headers?.get('retry-after-sandbox-create')
         const delay = retryAfter
           ? parseInt(retryAfter) * 1000

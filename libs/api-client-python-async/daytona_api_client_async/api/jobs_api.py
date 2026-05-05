@@ -637,7 +637,7 @@ class JobsApi:
     ) -> PollJobsResponse:
         """Long poll for jobs
 
-        Long poll endpoint for runners to fetch pending jobs. Returns immediately if jobs are available, otherwise waits up to timeout seconds.
+        Long poll endpoint for runners to fetch pending jobs. Returns immediately if jobs are available; otherwise, waits up to timeout seconds.
 
         :param timeout: Timeout in seconds for long polling (default: 30, max: 60)
         :type timeout: float
@@ -708,7 +708,7 @@ class JobsApi:
     ) -> ApiResponse[PollJobsResponse]:
         """Long poll for jobs
 
-        Long poll endpoint for runners to fetch pending jobs. Returns immediately if jobs are available, otherwise waits up to timeout seconds.
+        Long poll endpoint for runners to fetch pending jobs. Returns immediately if jobs are available; otherwise, waits up to timeout seconds.
 
         :param timeout: Timeout in seconds for long polling (default: 30, max: 60)
         :type timeout: float
@@ -779,7 +779,7 @@ class JobsApi:
     ) -> RESTResponseType:
         """Long poll for jobs
 
-        Long poll endpoint for runners to fetch pending jobs. Returns immediately if jobs are available, otherwise waits up to timeout seconds.
+        Long poll endpoint for runners to fetch pending jobs. Returns immediately if jobs are available; otherwise, waits up to timeout seconds.
 
         :param timeout: Timeout in seconds for long polling (default: 30, max: 60)
         :type timeout: float

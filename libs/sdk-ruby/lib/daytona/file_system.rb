@@ -125,7 +125,7 @@ module Daytona
     # @param remote_path [String] Path to the file in the Sandbox. Relative paths are resolved based
     #   on the sandbox working directory.
     # @param local_path [String, nil] Optional path to save the file locally. If provided, the file will be saved to disk.
-    # @return [File, nil] The file if local_path is nil, otherwise nil
+    # @return [File, nil] The file if local_path is nil; otherwise, nil
     # @raise [Daytona::Sdk::Error] If the operation fails
     #
     # @example

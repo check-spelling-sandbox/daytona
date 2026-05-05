@@ -427,7 +427,7 @@ public class JobsApi {
 
     /**
      * Long poll for jobs
-     * Long poll endpoint for runners to fetch pending jobs. Returns immediately if jobs are available, otherwise waits up to timeout seconds.
+     * Long poll endpoint for runners to fetch pending jobs. Returns immediately if jobs are available; otherwise, waits up to timeout seconds.
      * @param timeout Timeout in seconds for long polling (default: 30, max: 60) (optional)
      * @param limit Maximum number of jobs to return (default: 10, max: 100) (optional)
      * @return PollJobsResponse
@@ -446,7 +446,7 @@ public class JobsApi {
 
     /**
      * Long poll for jobs
-     * Long poll endpoint for runners to fetch pending jobs. Returns immediately if jobs are available, otherwise waits up to timeout seconds.
+     * Long poll endpoint for runners to fetch pending jobs. Returns immediately if jobs are available; otherwise, waits up to timeout seconds.
      * @param timeout Timeout in seconds for long polling (default: 30, max: 60) (optional)
      * @param limit Maximum number of jobs to return (default: 10, max: 100) (optional)
      * @return ApiResponse&lt;PollJobsResponse&gt;
@@ -466,7 +466,7 @@ public class JobsApi {
 
     /**
      * Long poll for jobs (asynchronously)
-     * Long poll endpoint for runners to fetch pending jobs. Returns immediately if jobs are available, otherwise waits up to timeout seconds.
+     * Long poll endpoint for runners to fetch pending jobs. Returns immediately if jobs are available; otherwise, waits up to timeout seconds.
      * @param timeout Timeout in seconds for long polling (default: 30, max: 60) (optional)
      * @param limit Maximum number of jobs to return (default: 10, max: 100) (optional)
      * @param _callback The callback to be executed when the API call finishes

@@ -248,7 +248,7 @@ public class ApiClient {
     /**
      * Configure whether to verify certificate and hostname when making https requests.
      * Default to true.
-     * NOTE: Do NOT set to false in production code, otherwise you would face multiple types of cryptographic attacks.
+     * NOTE: Do NOT set to false in production code; otherwise, you would face multiple types of cryptographic attacks.
      *
      * @param verifyingSsl True to verify TLS/SSL connection
      * @return ApiClient
@@ -627,7 +627,7 @@ public class ApiClient {
 
     /**
      * Sets the connect timeout (in milliseconds).
-     * A value of 0 means no timeout, otherwise values must be between 1 and
+     * A value of 0 means no timeout; otherwise, values must be between 1 and
      * {@link java.lang.Integer#MAX_VALUE}.
      *
      * @param connectionTimeout connection timeout in milliseconds
@@ -649,7 +649,7 @@ public class ApiClient {
 
     /**
      * Sets the read timeout (in milliseconds).
-     * A value of 0 means no timeout, otherwise values must be between 1 and
+     * A value of 0 means no timeout; otherwise, values must be between 1 and
      * {@link java.lang.Integer#MAX_VALUE}.
      *
      * @param readTimeout read timeout in milliseconds
@@ -671,7 +671,7 @@ public class ApiClient {
 
     /**
      * Sets the write timeout (in milliseconds).
-     * A value of 0 means no timeout, otherwise values must be between 1 and
+     * A value of 0 means no timeout; otherwise, values must be between 1 and
      * {@link java.lang.Integer#MAX_VALUE}.
      *
      * @param writeTimeout connection timeout in milliseconds

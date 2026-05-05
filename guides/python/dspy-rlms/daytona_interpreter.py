@@ -214,7 +214,7 @@ def {tool_name}({signature}):
         raise RuntimeError(f"Tool call failed: {{data['error']}}")
 
     result = data.get("result")
-    # Try to parse JSON result, otherwise return as-is
+    # Try to parse JSON result; otherwise, return as-is
     if isinstance(result, str):
         try:
             return _json.loads(result)
@@ -713,7 +713,7 @@ print("Broker server code written")
             if new_tools:
                 self._inject_tool_wrappers()
 
-        # If we have tools, run with polling loop; otherwise run directly
+        # If we have tools, run with polling loop; otherwise, run directly
         last_error: Exception | None = None
         for attempt in range(1, self._max_retries + 1):
             try:

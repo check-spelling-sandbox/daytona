@@ -369,7 +369,7 @@ func (g *SSHGateway) handleChannel(newChannel ssh.NewChannel, runnerID string, r
 }
 
 func (g *SSHGateway) connectToRunner(sandboxId string, runnerDomain string, signer ssh.Signer) (*ssh.Client, error) {
-	// Use runner domain if available, otherwise use localhost
+	// Use runner domain if available; otherwise, use localhost
 	host := runnerDomain
 	if host == "" {
 		host = "localhost"

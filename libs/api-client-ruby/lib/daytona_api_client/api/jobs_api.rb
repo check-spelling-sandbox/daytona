@@ -162,7 +162,7 @@ module DaytonaApiClient
     end
 
     # Long poll for jobs
-    # Long poll endpoint for runners to fetch pending jobs. Returns immediately if jobs are available, otherwise waits up to timeout seconds.
+    # Long poll endpoint for runners to fetch pending jobs. Returns immediately if jobs are available; otherwise, waits up to timeout seconds.
     # @param [Hash] opts the optional parameters
     # @option opts [Float] :timeout Timeout in seconds for long polling (default: 30, max: 60)
     # @option opts [Float] :limit Maximum number of jobs to return (default: 10, max: 100)
@@ -173,7 +173,7 @@ module DaytonaApiClient
     end
 
     # Long poll for jobs
-    # Long poll endpoint for runners to fetch pending jobs. Returns immediately if jobs are available, otherwise waits up to timeout seconds.
+    # Long poll endpoint for runners to fetch pending jobs. Returns immediately if jobs are available; otherwise, waits up to timeout seconds.
     # @param [Hash] opts the optional parameters
     # @option opts [Float] :timeout Timeout in seconds for long polling (default: 30, max: 60)
     # @option opts [Float] :limit Maximum number of jobs to return (default: 10, max: 100)

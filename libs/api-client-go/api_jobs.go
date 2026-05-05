@@ -53,7 +53,7 @@ type JobsAPI interface {
 	/*
 	PollJobs Long poll for jobs
 
-	Long poll endpoint for runners to fetch pending jobs. Returns immediately if jobs are available, otherwise waits up to timeout seconds.
+	Long poll endpoint for runners to fetch pending jobs. Returns immediately if jobs are available; otherwise, waits up to timeout seconds.
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return JobsAPIPollJobsRequest
@@ -355,7 +355,7 @@ func (r JobsAPIPollJobsRequest) Execute() (*PollJobsResponse, *http.Response, er
 /*
 PollJobs Long poll for jobs
 
-Long poll endpoint for runners to fetch pending jobs. Returns immediately if jobs are available, otherwise waits up to timeout seconds.
+Long poll endpoint for runners to fetch pending jobs. Returns immediately if jobs are available; otherwise, waits up to timeout seconds.
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @return JobsAPIPollJobsRequest

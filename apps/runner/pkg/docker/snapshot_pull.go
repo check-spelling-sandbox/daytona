@@ -34,7 +34,7 @@ func (d *DockerClient) PullSnapshot(ctx context.Context, req dto.PullSnapshotReq
 
 		var targetRef string
 
-		// If destination ref is provided, use it directly; otherwise build it from the image info
+		// If destination ref is provided, use it directly; otherwise, build it from the image info
 		if req.DestinationRef != nil {
 			targetRef = *req.DestinationRef
 		} else {

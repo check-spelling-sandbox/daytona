@@ -68,7 +68,7 @@ public class JobsApiTest {
     /**
      * Long poll for jobs
      *
-     * Long poll endpoint for runners to fetch pending jobs. Returns immediately if jobs are available, otherwise waits up to timeout seconds.
+     * Long poll endpoint for runners to fetch pending jobs. Returns immediately if jobs are available; otherwise, waits up to timeout seconds.
      *
      * @throws ApiException if the Api call fails
      */

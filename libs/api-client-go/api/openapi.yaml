@@ -7886,7 +7886,7 @@ paths:
   /jobs/poll:
     get:
       description: "Long poll endpoint for runners to fetch pending jobs. Returns\
-        \ immediately if jobs are available, otherwise waits up to timeout seconds."
+        \ immediately if jobs are available; otherwise, waits up to timeout seconds."
       operationId: pollJobs
       parameters:
       - description: "Timeout in seconds for long polling (default: 30, max: 60)"

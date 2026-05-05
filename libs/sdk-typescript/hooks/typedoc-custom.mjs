@@ -316,7 +316,7 @@ function transformInheritedSections(contents) {
 
       // If we found both property and inheritance info, transform it
       if (propertyLineIndex >= 0 && inheritanceInfo) {
-        // Use memberof info if available, otherwise use inheritance info
+        // Use memberof info if available; otherwise, use inheritance info
         let finalInheritanceInfo
         if (memberofInfo && inheritanceInfo.includes('.')) {
           // Extract property name from inheritance info and combine with memberof class
@@ -619,7 +619,7 @@ function transformPropsOrTypeDeclaration(contents, headerTitle) {
           let type = typeMatch[1].trim()
           type = type.replace(/readonly\s+/, '').trim()
 
-          // Use index signature type if available, otherwise use the original type
+          // Use index signature type if available; otherwise, use the original type
           if (indexSignatureType) {
             type = indexSignatureType
           }

@@ -28,8 +28,8 @@ public interface ApiCallback<T> {
      * This is called when the API call fails.
      *
      * @param e The exception causing the failure
-     * @param statusCode Status code of the response if available, otherwise it would be 0
-     * @param responseHeaders Headers of the response if available, otherwise it would be null
+     * @param statusCode Status code of the response if available; otherwise, it would be 0
+     * @param responseHeaders Headers of the response if available; otherwise, it would be null
      */
     void onFailure(ApiException e, int statusCode, Map<String, List<String>> responseHeaders);
 

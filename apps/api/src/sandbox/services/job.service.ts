@@ -57,7 +57,7 @@ export class JobService {
     resourceId: string,
     payload?: string | Record<string, any>,
   ): Promise<Job> {
-    // Use provided manager if available, otherwise use default repository
+    // Use provided manager if available; otherwise, use default repository
     const repo = manager ? manager.getRepository(Job) : this.jobRepository
 
     // Capture current OpenTelemetry trace context for distributed tracing

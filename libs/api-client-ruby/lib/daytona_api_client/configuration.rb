@@ -113,7 +113,7 @@ module DaytonaApiClient
     # Set this to false to skip verifying SSL certificate when calling API from https server.
     # Default to true.
     #
-    # @note Do NOT set it to false in production code, otherwise you would face multiple types of cryptographic attacks.
+    # @note Do NOT set it to false in production code; otherwise, you would face multiple types of cryptographic attacks.
     #
     # @return [true, false]
     attr_accessor :verify_ssl
@@ -122,7 +122,7 @@ module DaytonaApiClient
     # Set this to false to skip verifying SSL host name
     # Default to true.
     #
-    # @note Do NOT set it to false in production code, otherwise you would face multiple types of cryptographic attacks.
+    # @note Do NOT set it to false in production code; otherwise, you would face multiple types of cryptographic attacks.
     #
     # @return [true, false]
     attr_accessor :verify_ssl_host

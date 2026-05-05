@@ -78,7 +78,7 @@ export class JobController {
     summary: 'Long poll for jobs',
     operationId: 'pollJobs',
     description:
-      'Long poll endpoint for runners to fetch pending jobs. Returns immediately if jobs are available, otherwise waits up to timeout seconds.',
+      'Long poll endpoint for runners to fetch pending jobs. Returns immediately if jobs are available; otherwise, waits up to timeout seconds.',
   })
   @ApiQuery({
     name: 'timeout',

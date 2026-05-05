@@ -133,7 +133,7 @@ export const JobsApiAxiosParamCreator = function (configuration?: Configuration)
             };
         },
         /**
-         * Long poll endpoint for runners to fetch pending jobs. Returns immediately if jobs are available, otherwise waits up to timeout seconds.
+         * Long poll endpoint for runners to fetch pending jobs. Returns immediately if jobs are available; otherwise, waits up to timeout seconds.
          * @summary Long poll for jobs
          * @param {number} [timeout] Timeout in seconds for long polling (default: 30, max: 60)
          * @param {number} [limit] Maximum number of jobs to return (default: 10, max: 100)
@@ -262,7 +262,7 @@ export const JobsApiFp = function(configuration?: Configuration) {
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
-         * Long poll endpoint for runners to fetch pending jobs. Returns immediately if jobs are available, otherwise waits up to timeout seconds.
+         * Long poll endpoint for runners to fetch pending jobs. Returns immediately if jobs are available; otherwise, waits up to timeout seconds.
          * @summary Long poll for jobs
          * @param {number} [timeout] Timeout in seconds for long polling (default: 30, max: 60)
          * @param {number} [limit] Maximum number of jobs to return (default: 10, max: 100)
@@ -322,7 +322,7 @@ export const JobsApiFactory = function (configuration?: Configuration, basePath?
             return localVarFp.listJobs(page, limit, status, offset, options).then((request) => request(axios, basePath));
         },
         /**
-         * Long poll endpoint for runners to fetch pending jobs. Returns immediately if jobs are available, otherwise waits up to timeout seconds.
+         * Long poll endpoint for runners to fetch pending jobs. Returns immediately if jobs are available; otherwise, waits up to timeout seconds.
          * @summary Long poll for jobs
          * @param {number} [timeout] Timeout in seconds for long polling (default: 30, max: 60)
          * @param {number} [limit] Maximum number of jobs to return (default: 10, max: 100)
@@ -376,7 +376,7 @@ export class JobsApi extends BaseAPI {
     }
 
     /**
-     * Long poll endpoint for runners to fetch pending jobs. Returns immediately if jobs are available, otherwise waits up to timeout seconds.
+     * Long poll endpoint for runners to fetch pending jobs. Returns immediately if jobs are available; otherwise, waits up to timeout seconds.
      * @summary Long poll for jobs
      * @param {number} [timeout] Timeout in seconds for long polling (default: 30, max: 60)
      * @param {number} [limit] Maximum number of jobs to return (default: 10, max: 100)
