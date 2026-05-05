@@ -97,7 +97,7 @@ else:
 daytona.delete(sandbox)
 ```
 
-### Typescript SDK
+### TypeScript SDK
 
 ```jsx
 import { Daytona } from '@daytona/sdk'

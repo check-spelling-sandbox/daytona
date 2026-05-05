@@ -13,11 +13,11 @@ import (
 	"github.com/sourcegraph/jsonrpc2"
 )
 
-type TypescriptLSPServer struct {
+type TypeScriptLSPServer struct {
 	*LSPServerAbstract
 }
 
-func (s *TypescriptLSPServer) Initialize(pathToProject string) error {
+func (s *TypeScriptLSPServer) Initialize(pathToProject string) error {
 	ctx := context.Background()
 
 	cmd := exec.Command("typescript-language-server", "--stdio")
@@ -82,9 +82,9 @@ func (s *TypescriptLSPServer) Initialize(pathToProject string) error {
 		conn.Close()
 		killerr := cmd.Process.Kill()
 		if killerr != nil {
-			return fmt.Errorf("failed to initialize Typescript LSP connection: %w, failed to kill process: %w", err, killerr)
+			return fmt.Errorf("failed to initialize TypeScript LSP connection: %w, failed to kill process: %w", err, killerr)
 		}
-		return fmt.Errorf("failed to initialize Typescript LSP connection: %w", err)
+		return fmt.Errorf("failed to initialize TypeScript LSP connection: %w", err)
 	}
 
 	s.client = client
@@ -93,17 +93,17 @@ func (s *TypescriptLSPServer) Initialize(pathToProject string) error {
 	return nil
 }
 
-func (s *TypescriptLSPServer) Shutdown() error {
+func (s *TypeScriptLSPServer) Shutdown() error {
 	err := s.client.Shutdown(context.Background())
 	if err != nil {
-		return fmt.Errorf("failed to shutdown Typescript LSP server: %w", err)
+		return fmt.Errorf("failed to shutdown TypeScript LSP server: %w", err)
 	}
 	s.initialized = false
 	return nil
 }
 
-func NewTypeScriptLSPServer(logger *slog.Logger) *TypescriptLSPServer {
-	return &TypescriptLSPServer{
+func NewTypeScriptLSPServer(logger *slog.Logger) *TypeScriptLSPServer {
+	return &TypeScriptLSPServer{
 		LSPServerAbstract: &LSPServerAbstract{
 			languageId: "typescript",
 			logger:     logger.With(slog.String("component", "typescript_lsp_server")),

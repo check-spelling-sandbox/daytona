@@ -363,7 +363,7 @@ export function comparePaths(path1: string, path2: string): boolean {
 }
 
 export interface HeaderActiveState {
-  isTypescriptSdkActive: boolean
+  isTypeScriptSdkActive: boolean
   isPythonSdkActive: boolean
   isRubySdkActive: boolean
   isGoSdkActive: boolean
@@ -388,7 +388,7 @@ export function getHeaderActiveState(
     cli: `${baseUrl}/en/tools/cli`,
   }
 
-  const isTypescriptSdkActive = isActiveOrParentPath(
+  const isTypeScriptSdkActive = isActiveOrParentPath(
     referencePaths.typescriptSdk,
     currentPath
   )
@@ -409,7 +409,7 @@ export function getHeaderActiveState(
   const isCliActive = isActiveOrParentPath(referencePaths.cli, currentPath)
 
   return {
-    isTypescriptSdkActive,
+    isTypeScriptSdkActive,
     isPythonSdkActive,
     isRubySdkActive,
     isGoSdkActive,
@@ -417,7 +417,7 @@ export function getHeaderActiveState(
     isApiActive,
     isCliActive,
     isReferencesActive:
-      isTypescriptSdkActive ||
+      isTypeScriptSdkActive ||
       isPythonSdkActive ||
       isRubySdkActive ||
       isGoSdkActive ||

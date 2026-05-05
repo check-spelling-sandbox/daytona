@@ -4,7 +4,7 @@
  */
 
 import PythonIcon from '@/assets/python.svg'
-import TypescriptIcon from '@/assets/typescript.svg'
+import TypeScriptIcon from '@/assets/typescript.svg'
 import CodeBlock from '@/components/CodeBlock'
 import { CopyButton } from '@/components/CopyButton'
 import TooltipButton from '@/components/TooltipButton'
@@ -31,7 +31,7 @@ import { codeSnippetGenerators, CodeSnippetParams } from './CodeSnippets'
 
 const codeSnippetSupportedLanguages = [
   { value: CodeLanguage.PYTHON, label: 'Python', icon: PythonIcon },
-  { value: CodeLanguage.TYPESCRIPT, label: 'TypeScript', icon: TypescriptIcon },
+  { value: CodeLanguage.TYPESCRIPT, label: 'TypeScript', icon: TypeScriptIcon },
 ] as const
 
 const SECTION_SCROLL_MARKERS: Partial<Record<SandboxParametersSections, string[]>> = {

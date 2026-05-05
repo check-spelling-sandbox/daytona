@@ -168,7 +168,7 @@ response = sandbox.process.code_run('print("Hello World!")')
 print(response.result)
 ```
 
-### Typescript SDK
+### TypeScript SDK
 
 ```jsx
 import { Daytona } from "@daytona/sdk";
