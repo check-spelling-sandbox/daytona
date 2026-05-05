@@ -23,7 +23,7 @@ import (
 type ComputerUseAPI interface {
 
 	/*
-		Click Click mouse button
+		Click mouse button
 
 		Click the mouse button at the specified coordinates
 
