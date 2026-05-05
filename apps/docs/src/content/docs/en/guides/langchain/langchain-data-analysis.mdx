@@ -374,7 +374,7 @@ df = pd.read_csv('/home/daytona/dataset.csv')
 
 print("Original dataset shape:", df.shape)
 
-# Clean the data - remove rows with missing values in year or price_in_euro
+# Clean the data - remove rows missing values in year or price_in_euro
 df_clean = df.dropna(subset=['year', 'price_in_euro'])
 print(f"After removing missing values: {df_clean.shape}")
 

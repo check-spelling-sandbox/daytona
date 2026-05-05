@@ -158,7 +158,7 @@ describe('[AUTH] OrganizationAuthContextGuard', () => {
     expect(result).toBe(true)
   })
 
-  it('should reject member with missing permissions', async () => {
+  it('should reject member missing permissions', async () => {
     mockReflector.getAllAndOverride.mockImplementation((key: any) => {
       if (key === RequiredOrganizationResourcePermissions) {
         return [OrganizationResourcePermission.DELETE_SANDBOXES]
