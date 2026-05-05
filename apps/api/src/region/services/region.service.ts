@@ -162,7 +162,7 @@ export class RegionService {
 
   /**
    * @param regionId - The ID of the region.
-   * @returns The organization ID or null for for regions not associated with an organization if the region is found, or undefined if the region is not found.
+   * @returns The organization ID or null for regions not associated with an organization if the region is found, or undefined if the region is not found.
    */
   async getOrganizationId(regionId: string): Promise<string | null | undefined> {
     const region = await this.regionRepository.findOne({
