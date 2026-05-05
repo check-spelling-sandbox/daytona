@@ -132,7 +132,7 @@ export class UsageService implements TrackableJobExecutions, OnApplicationShutdo
     })
 
     for (const usagePeriod of usagePeriods) {
-      if (!(await this.aquireLock(usagePeriod.sandboxId))) {
+      if (!(await this.acquireLock(usagePeriod.sandboxId))) {
         continue
       }
 
@@ -211,12 +211,12 @@ export class UsageService implements TrackableJobExecutions, OnApplicationShutdo
   }
 
   private async waitForLock(sandboxId: string) {
-    while (!(await this.aquireLock(sandboxId))) {
+    while (!(await this.acquireLock(sandboxId))) {
       await new Promise((resolve) => setTimeout(resolve, 500))
     }
   }
 
-  private async aquireLock(sandboxId: string): Promise<boolean> {
+  private async acquireLock(sandboxId: string): Promise<boolean> {
     return await this.redisLockProvider.lock(`usage-period-${sandboxId}`, 60)
   }
 
