@@ -109,7 +109,7 @@ func (c *Configuration) AddDefaultHeader(key string, value string) {
 	c.DefaultHeader[key] = value
 }
 
-// URL formats template on a index using given variables
+// URL formats template on an index using given variables
 func (sc ServerConfigurations) URL(index int, variables map[string]string) (string, error) {
 	if index < 0 || len(sc) <= index {
 		return "", fmt.Errorf("index %v out of range %v", index, len(sc)-1)
