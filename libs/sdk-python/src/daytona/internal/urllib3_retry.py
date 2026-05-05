@@ -29,7 +29,7 @@ class RemoteDisconnectedRetry(urllib3.Retry):
     also surface as RemoteDisconnected. However, this is not a practical
     concern — if the daemon crashes, it will be down when the retry arrives,
     so the retried request will fail with a connection error rather than
-    executing the operation a second time.
+    executing the operation again.
 
     Implementation: we override ``_is_read_error`` to return ``False`` for
     RemoteDisconnected. This causes urllib3's ``increment()`` to fall into the
