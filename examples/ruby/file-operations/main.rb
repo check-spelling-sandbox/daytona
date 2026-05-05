@@ -14,7 +14,7 @@ puts "Created sandbox ##{sandbox.id}"
 files = sandbox.fs.list_files('.')
 puts "Initial files: #{files}"
 
-# Create a new directory directory in the Sandbox
+# Create a new directory in the Sandbox
 project_files = 'project-files'
 sandbox.fs.create_folder(project_files, '755')
 
