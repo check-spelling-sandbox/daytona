@@ -611,7 +611,7 @@ export class OrganizationUsageService {
    */
   async fetchSandboxUsageFromDb(organizationId: string, regionId: string): Promise<SandboxUsageOverviewInternalDto> {
     // fetch from db
-    // For CPU/memory, we need to also count RESIZING sandboxes that were hot resizing (desiredState = 'started')
+    // For CPU/memory, we also need to count RESIZING sandboxes that were hot resizing (desiredState = 'started')
     // since they are still running and consuming compute resources
     const sandboxUsageMetrics: {
       used_cpu: number

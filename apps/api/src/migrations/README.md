@@ -186,4 +186,4 @@ This reverts the **last executed migration** from either folder (based on the co
 - The revert order follows the execution timestamp, not the folder structure
 - Always test revert scripts in development before relying on them in production
 
-**Recommendation:** After reverting, you may need to also revert the corresponding entity changes and regenerate migrations to keep everything in sync.
+**Recommendation:** After reverting, you may also need to revert the corresponding entity changes and regenerate migrations to keep everything in sync.
