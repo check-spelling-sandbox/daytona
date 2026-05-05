@@ -874,7 +874,7 @@ export class SnapshotManager implements TrackableJobExecutions, OnApplicationShu
       //  just in case the snapshot is still there
       runnerAdapter.removeSnapshot(snapshotRunner.snapshotRef).catch((err) => {
         //  this should not happen, and is not critical
-        //  if the runner can not remove the snapshot, just delete the snapshot runner record
+        //  if the runner cannot remove the snapshot, just delete the snapshot runner record
         this.snapshotRunnerRepository.delete(snapshotRunner.id).catch((err) => {
           this.logger.error(fromAxiosError(err))
         })
