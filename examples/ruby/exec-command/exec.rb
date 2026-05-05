@@ -75,7 +75,7 @@ def session_exec_logs_async(sandbox)
   command = sandbox.process.execute_session_command(
     session_id: session_id,
     req: Daytona::SessionExecuteRequest.new(
-      command: 'counter=1; while (( counter <= 3 )); do echo "Count: $counter"; ((counter++)); sleep 2; done; non-existent-command',
+      command: 'counter=1; while (( counter <= 3 )); do echo "Count: $counter"; ((counter++)); sleep 2; done; nonexistent-command',
       run_async: true
     )
   )

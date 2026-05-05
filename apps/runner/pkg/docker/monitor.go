@@ -218,9 +218,9 @@ func (dm *DockerMonitor) reconcileNetworkRules(table string, chain string) {
 			dm.log.Error("Error inspecting container", "containerID", containerID, "error", err)
 			// Container doesn't exist, unassign the rules
 			if err := dm.netRulesManager.UnassignNetworkRules(containerID); err != nil {
-				dm.log.Error("Error unassigning rules for non-existent container", "containerID", containerID, "error", err)
+				dm.log.Error("Error unassigning rules for nonexistent container", "containerID", containerID, "error", err)
 			} else {
-				dm.log.Info("Unassigned rules for non-existent container", "containerID", containerID)
+				dm.log.Info("Unassigned rules for nonexistent container", "containerID", containerID)
 			}
 			continue
 		}
@@ -247,7 +247,7 @@ func (dm *DockerMonitor) reconcileNetworkRules(table string, chain string) {
 	}
 }
 
-// reconcileChains removes orphaned chains for non-existent containers
+// reconcileChains removes orphaned chains for nonexistent containers
 func (dm *DockerMonitor) reconcileChains(table string) {
 	// List all chains that start with DAYTONA-SB-
 	chains, err := dm.netRulesManager.ListDaytonaChains(table)

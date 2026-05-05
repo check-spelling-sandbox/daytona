@@ -614,7 +614,7 @@ RSpec.describe 'Daytona SDK E2E', :e2e do
   end
 
   context 'Additional Process and Error Handling', order: :defined do
-    it 'returns failure for a non-existent path command' do
+    it 'returns failure for a nonexistent path command' do
       response = @sandbox.process.exec(command: 'ls /definitely-missing-e2e-path')
       expect(response.exit_code).not_to eq(0)
     end

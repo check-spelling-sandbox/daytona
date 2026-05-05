@@ -17,7 +17,7 @@ async def main():
                 command=(
                     'printf "Enter your name: \\n" && read name && printf "Hello, %s\\n" "$name"; '
                     'counter=1; while (( counter <= 3 )); do echo "Count: $counter"; '
-                    "((counter++)); sleep 2; done; non-existent-command"
+                    "((counter++)); sleep 2; done; nonexistent-command"
                 ),
                 run_async=True,
             ),

@@ -223,7 +223,7 @@ describe('TypeScript SDK E2E (real Daytona API)', () => {
       expect(Buffer.concat(chunks).toString()).toBe(content)
     })
 
-    test('rejects stream download for non-existent file', async () => {
+    test('rejects stream download for nonexistent file', async () => {
       await expect(sandbox.fs.downloadFileStream('fs-test/does-not-exist.txt')).rejects.toThrow()
     })
 
@@ -709,12 +709,12 @@ describe('TypeScript SDK E2E (real Daytona API)', () => {
   // Error Handling and Additional Process Paths
   // ──────────────────────────────────────────────
   describe('Additional Process and Error Handling', () => {
-    test('executeCommand on non-existent path returns a failure', async () => {
+    test('executeCommand on nonexistent path returns a failure', async () => {
       const response = await sandbox.process.executeCommand('ls /definitely-missing-e2e-path')
       expect(response.exitCode).not.toBe(0)
     })
 
-    test('download non-existent file throws error', async () => {
+    test('download nonexistent file throws error', async () => {
       await expect(sandbox.fs.downloadFile('fs-test/does-not-exist.txt')).rejects.toThrow()
     })
 

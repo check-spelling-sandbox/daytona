@@ -25,7 +25,7 @@ RSpec.describe Daytona::ObjectStorage do
   end
 
   describe '#upload' do
-    it 'raises Errno::ENOENT for non-existent paths' do
+    it 'raises Errno::ENOENT for nonexistent paths' do
       expect { storage.upload('/nonexistent/path', 'org-1') }
         .to raise_error(Errno::ENOENT, /Path does not exist/)
     end
