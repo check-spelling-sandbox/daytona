@@ -84,7 +84,7 @@ export class Git {
   }
 
   /**
-   * Delete branche in the repository.
+   * Delete branch in the repository.
    *
    * @param {string} path - Path to the Git repository root. Relative paths are resolved based on the sandbox working directory.
    * @param {string} name - Name of the branch to delete
@@ -103,7 +103,7 @@ export class Git {
   }
 
   /**
-   * Checkout branche in the repository.
+   * Checkout branch in the repository.
    *
    * @param {string} path - Path to the Git repository root. Relative paths are resolved based on the sandbox working directory.
    * @param {string} branch - Name of the branch to checkout
