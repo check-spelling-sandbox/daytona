@@ -66,7 +66,7 @@ type ComputerUseAPI interface {
 	DownloadRecordingExecute(r ComputerUseAPIDownloadRecordingRequest) (*os.File, *http.Response, error)
 
 	/*
-		Drag Drag mouse
+		Drag mouse
 
 		Drag the mouse from start to end coordinates
 
