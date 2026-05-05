@@ -88,7 +88,7 @@ type LspAPI interface {
 	StartExecute(r LspAPIStartRequest) (*http.Response, error)
 
 	/*
-		Stop Stop LSP server
+		Stop LSP server
 
 		Stop a Language Server Protocol server
 
