@@ -64,7 +64,7 @@ export class RegionQuota {
 
   /**
    * The maximum disk size allowed for non-ephemeral sandboxes.
-   * If `null`, fallback to `maxDiskPerSandbox`.
+   * If `null`, fall back to `maxDiskPerSandbox`.
    * If `0`, non-ephemeral sandboxes are not permitted in this region.
    */
   @Column({

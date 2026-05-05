@@ -223,7 +223,7 @@ export class Sandbox {
 
   constructor(region: string, name?: string) {
     this.id = uuidv4()
-    // Set name - use provided name or fallback to ID
+    // Set name - use provided name or fall back to ID
     this.name = name || this.id
     this.region = region
   }

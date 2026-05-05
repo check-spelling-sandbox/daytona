@@ -347,7 +347,7 @@ function parseOpenAPISpec(specPath, apiName, baseUrl) {
         // Create slug for linking
         const slug = `${path}${operationId ? `#${operationId}` : ''}`
 
-        // Use first tag for URL, or fallback to path-based tag
+        // Use first tag for URL, or fall back to path-based tag
         const primaryTag =
           tags.length > 0
             ? tags[0]

@@ -29,7 +29,7 @@ func (d *DockerClient) GetImageInfo(ctx context.Context, imageName string) (*Ima
 	}
 
 	// Extract digest from RepoDigests instead of using ID
-	hash := inspect.ID // fallback to ID if no digest found
+	hash := inspect.ID // fall back to ID if no digest found
 	if len(inspect.RepoDigests) > 0 {
 		// RepoDigests format is like: "image@sha256:abc123..."
 		for _, repoDigest := range inspect.RepoDigests {
