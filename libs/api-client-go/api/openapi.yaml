@@ -9278,7 +9278,7 @@ components:
         maxAutoArchiveInterval: 43200
         pylonAppId: pylon-app-123
         proxyTemplateUrl: "https://{{PORT}}-{{sandboxId}}.proxy.example.com"
-        maintananceMode: false
+        maintenanceMode: false
         environment: production
         defaultSnapshot: ubuntu:22.04
         sshGatewayCommand: "ssh -p 2222 {{TOKEN}}@localhost"
@@ -9336,7 +9336,7 @@ components:
           description: Maximum auto-archive interval in minutes
           example: 43200
           type: number
-        maintananceMode:
+        maintenanceMode:
           description: Whether maintenance mode is enabled
           example: false
           type: boolean
@@ -9370,7 +9370,7 @@ components:
       - defaultSnapshot
       - environment
       - linkedAccountsEnabled
-      - maintananceMode
+      - maintenanceMode
       - maxAutoArchiveInterval
       - oidc
       - proxyTemplateUrl

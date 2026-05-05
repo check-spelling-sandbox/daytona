@@ -47,7 +47,7 @@ export class AppService implements OnApplicationBootstrap, OnApplicationShutdown
   }
 
   async onApplicationBootstrap() {
-    if (this.configService.get('disableCronJobs') || this.configService.get('maintananceMode')) {
+    if (this.configService.get('disableCronJobs') || this.configService.get('maintenanceMode')) {
       await this.stopAllCronJobs()
     }
 

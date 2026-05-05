@@ -49,7 +49,7 @@ module DaytonaApiClient
     attr_accessor :max_auto_archive_interval
 
     # Whether maintenance mode is enabled
-    attr_accessor :maintanance_mode
+    attr_accessor :maintenance_mode
 
     # Current environment
     attr_accessor :environment
@@ -83,7 +83,7 @@ module DaytonaApiClient
         :'default_snapshot' => :'defaultSnapshot',
         :'dashboard_url' => :'dashboardUrl',
         :'max_auto_archive_interval' => :'maxAutoArchiveInterval',
-        :'maintanance_mode' => :'maintananceMode',
+        :'maintenance_mode' => :'maintenanceMode',
         :'environment' => :'environment',
         :'billing_api_url' => :'billingApiUrl',
         :'analytics_api_url' => :'analyticsApiUrl',
@@ -117,7 +117,7 @@ module DaytonaApiClient
         :'default_snapshot' => :'String',
         :'dashboard_url' => :'String',
         :'max_auto_archive_interval' => :'Float',
-        :'maintanance_mode' => :'Boolean',
+        :'maintenance_mode' => :'Boolean',
         :'environment' => :'String',
         :'billing_api_url' => :'String',
         :'analytics_api_url' => :'String',
@@ -213,10 +213,10 @@ module DaytonaApiClient
         self.max_auto_archive_interval = nil
       end
 
-      if attributes.key?(:'maintanance_mode')
-        self.maintanance_mode = attributes[:'maintanance_mode']
+      if attributes.key?(:'maintenance_mode')
+        self.maintenance_mode = attributes[:'maintenance_mode']
       else
-        self.maintanance_mode = nil
+        self.maintenance_mode = nil
       end
 
       if attributes.key?(:'environment')
@@ -287,8 +287,8 @@ module DaytonaApiClient
         invalid_properties.push('invalid value for "max_auto_archive_interval", max_auto_archive_interval cannot be nil.')
       end
 
-      if @maintanance_mode.nil?
-        invalid_properties.push('invalid value for "maintanance_mode", maintanance_mode cannot be nil.')
+      if @maintenance_mode.nil?
+        invalid_properties.push('invalid value for "maintenance_mode", maintenance_mode cannot be nil.')
       end
 
       if @environment.nil?
@@ -311,7 +311,7 @@ module DaytonaApiClient
       return false if @default_snapshot.nil?
       return false if @dashboard_url.nil?
       return false if @max_auto_archive_interval.nil?
-      return false if @maintanance_mode.nil?
+      return false if @maintenance_mode.nil?
       return false if @environment.nil?
       true
     end
@@ -407,13 +407,13 @@ module DaytonaApiClient
     end
 
     # Custom attribute writer method with validation
-    # @param [Object] maintanance_mode Value to be assigned
-    def maintanance_mode=(maintanance_mode)
-      if maintanance_mode.nil?
-        fail ArgumentError, 'maintanance_mode cannot be nil'
+    # @param [Object] maintenance_mode Value to be assigned
+    def maintenance_mode=(maintenance_mode)
+      if maintenance_mode.nil?
+        fail ArgumentError, 'maintenance_mode cannot be nil'
       end
 
-      @maintanance_mode = maintanance_mode
+      @maintenance_mode = maintenance_mode
     end
 
     # Custom attribute writer method with validation
@@ -442,7 +442,7 @@ module DaytonaApiClient
           default_snapshot == o.default_snapshot &&
           dashboard_url == o.dashboard_url &&
           max_auto_archive_interval == o.max_auto_archive_interval &&
-          maintanance_mode == o.maintanance_mode &&
+          maintenance_mode == o.maintenance_mode &&
           environment == o.environment &&
           billing_api_url == o.billing_api_url &&
           analytics_api_url == o.analytics_api_url &&
@@ -460,7 +460,7 @@ module DaytonaApiClient
     # Calculates hash code according to all attributes.
     # @return [Integer] Hash code
     def hash
-      [version, posthog, oidc, linked_accounts_enabled, announcements, pylon_app_id, proxy_template_url, proxy_toolbox_url, default_snapshot, dashboard_url, max_auto_archive_interval, maintanance_mode, environment, billing_api_url, analytics_api_url, ssh_gateway_command, ssh_gateway_public_key, rate_limit].hash
+      [version, posthog, oidc, linked_accounts_enabled, announcements, pylon_app_id, proxy_template_url, proxy_toolbox_url, default_snapshot, dashboard_url, max_auto_archive_interval, maintenance_mode, environment, billing_api_url, analytics_api_url, ssh_gateway_command, ssh_gateway_public_key, rate_limit].hash
     end
 
     # Builds the object from hash

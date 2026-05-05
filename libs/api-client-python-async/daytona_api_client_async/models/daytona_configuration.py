@@ -45,7 +45,7 @@ class DaytonaConfiguration(BaseModel):
     default_snapshot: StrictStr = Field(description="Default snapshot for sandboxes", serialization_alias="defaultSnapshot")
     dashboard_url: StrictStr = Field(description="Dashboard URL", serialization_alias="dashboardUrl")
     max_auto_archive_interval: Union[StrictFloat, StrictInt] = Field(description="Maximum auto-archive interval in minutes", serialization_alias="maxAutoArchiveInterval")
-    maintanance_mode: StrictBool = Field(description="Whether maintenance mode is enabled", serialization_alias="maintananceMode")
+    maintenance_mode: StrictBool = Field(description="Whether maintenance mode is enabled", serialization_alias="maintenanceMode")
     environment: StrictStr = Field(description="Current environment")
     billing_api_url: Optional[StrictStr] = Field(default=None, description="Billing API URL", serialization_alias="billingApiUrl")
     analytics_api_url: Optional[StrictStr] = Field(default=None, description="Analytics API URL", serialization_alias="analyticsApiUrl")
@@ -53,7 +53,7 @@ class DaytonaConfiguration(BaseModel):
     ssh_gateway_public_key: Optional[StrictStr] = Field(default=None, description="Base64 encoded SSH Gateway public key", serialization_alias="sshGatewayPublicKey")
     rate_limit: Optional[RateLimitConfig] = Field(default=None, description="Rate limit configuration", serialization_alias="rateLimit")
     additional_properties: Dict[str, Any] = {}
-    __properties: ClassVar[List[str]] = ["version", "posthog", "oidc", "linkedAccountsEnabled", "announcements", "pylonAppId", "proxyTemplateUrl", "proxyToolboxUrl", "defaultSnapshot", "dashboardUrl", "maxAutoArchiveInterval", "maintananceMode", "environment", "billingApiUrl", "analyticsApiUrl", "sshGatewayCommand", "sshGatewayPublicKey", "rateLimit"]
+    __properties: ClassVar[List[str]] = ["version", "posthog", "oidc", "linkedAccountsEnabled", "announcements", "pylonAppId", "proxyTemplateUrl", "proxyToolboxUrl", "defaultSnapshot", "dashboardUrl", "maxAutoArchiveInterval", "maintenanceMode", "environment", "billingApiUrl", "analyticsApiUrl", "sshGatewayCommand", "sshGatewayPublicKey", "rateLimit"]
 
     model_config = ConfigDict(
         populate_by_name=True,
@@ -144,7 +144,7 @@ class DaytonaConfiguration(BaseModel):
             "default_snapshot": obj.get("defaultSnapshot"),
             "dashboard_url": obj.get("dashboardUrl"),
             "max_auto_archive_interval": obj.get("maxAutoArchiveInterval"),
-            "maintanance_mode": obj.get("maintananceMode"),
+            "maintenance_mode": obj.get("maintenanceMode"),
             "environment": obj.get("environment"),
             "billing_api_url": obj.get("billingApiUrl"),
             "analytics_api_url": obj.get("analyticsApiUrl"),

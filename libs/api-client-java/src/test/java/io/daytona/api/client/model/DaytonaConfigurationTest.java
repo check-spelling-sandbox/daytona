@@ -133,11 +133,11 @@ public class DaytonaConfigurationTest {
     }
 
     /**
-     * Test the property 'maintananceMode'
+     * Test the property 'maintenanceMode'
      */
     @Test
-    public void maintananceModeTest() {
-        // TODO: test maintananceMode
+    public void maintenanceModeTest() {
+        // TODO: test maintenanceMode
     }
 
     /**

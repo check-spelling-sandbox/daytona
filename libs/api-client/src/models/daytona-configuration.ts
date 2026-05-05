@@ -74,7 +74,7 @@ export interface DaytonaConfiguration {
     /**
      * Whether maintenance mode is enabled
      */
-    'maintananceMode': boolean;
+    'maintenanceMode': boolean;
     /**
      * Current environment
      */

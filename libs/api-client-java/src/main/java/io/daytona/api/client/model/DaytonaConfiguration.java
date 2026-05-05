@@ -112,10 +112,10 @@ public class DaytonaConfiguration {
   @javax.annotation.Nonnull
   private BigDecimal maxAutoArchiveInterval;
 
-  public static final String SERIALIZED_NAME_MAINTANANCE_MODE = "maintananceMode";
-  @SerializedName(SERIALIZED_NAME_MAINTANANCE_MODE)
+  public static final String SERIALIZED_NAME_MAINTENANCE_MODE = "maintenanceMode";
+  @SerializedName(SERIALIZED_NAME_MAINTENANCE_MODE)
   @javax.annotation.Nonnull
-  private Boolean maintananceMode;
+  private Boolean maintenanceMode;
 
   public static final String SERIALIZED_NAME_ENVIRONMENT = "environment";
   @SerializedName(SERIALIZED_NAME_ENVIRONMENT)
@@ -367,22 +367,22 @@ public class DaytonaConfiguration {
   }
 
 
-  public DaytonaConfiguration maintananceMode(@javax.annotation.Nonnull Boolean maintananceMode) {
-    this.maintananceMode = maintananceMode;
+  public DaytonaConfiguration maintenanceMode(@javax.annotation.Nonnull Boolean maintenanceMode) {
+    this.maintenanceMode = maintenanceMode;
     return this;
   }
 
   /**
    * Whether maintenance mode is enabled
-   * @return maintananceMode
+   * @return maintenanceMode
    */
   @javax.annotation.Nonnull
-  public Boolean getMaintananceMode() {
-    return maintananceMode;
+  public Boolean getMaintenanceMode() {
+    return maintenanceMode;
   }
 
-  public void setMaintananceMode(@javax.annotation.Nonnull Boolean maintananceMode) {
-    this.maintananceMode = maintananceMode;
+  public void setMaintenanceMode(@javax.annotation.Nonnull Boolean maintenanceMode) {
+    this.maintenanceMode = maintenanceMode;
   }
 
 
@@ -565,7 +565,7 @@ public class DaytonaConfiguration {
         Objects.equals(this.defaultSnapshot, daytonaConfiguration.defaultSnapshot) &&
         Objects.equals(this.dashboardUrl, daytonaConfiguration.dashboardUrl) &&
         Objects.equals(this.maxAutoArchiveInterval, daytonaConfiguration.maxAutoArchiveInterval) &&
-        Objects.equals(this.maintananceMode, daytonaConfiguration.maintananceMode) &&
+        Objects.equals(this.maintenanceMode, daytonaConfiguration.maintenanceMode) &&
         Objects.equals(this.environment, daytonaConfiguration.environment) &&
         Objects.equals(this.billingApiUrl, daytonaConfiguration.billingApiUrl) &&
         Objects.equals(this.analyticsApiUrl, daytonaConfiguration.analyticsApiUrl) &&
@@ -577,7 +577,7 @@ public class DaytonaConfiguration {
 
   @Override
   public int hashCode() {
-    return Objects.hash(version, posthog, oidc, linkedAccountsEnabled, announcements, pylonAppId, proxyTemplateUrl, proxyToolboxUrl, defaultSnapshot, dashboardUrl, maxAutoArchiveInterval, maintananceMode, environment, billingApiUrl, analyticsApiUrl, sshGatewayCommand, sshGatewayPublicKey, rateLimit, additionalProperties);
+    return Objects.hash(version, posthog, oidc, linkedAccountsEnabled, announcements, pylonAppId, proxyTemplateUrl, proxyToolboxUrl, defaultSnapshot, dashboardUrl, maxAutoArchiveInterval, maintenanceMode, environment, billingApiUrl, analyticsApiUrl, sshGatewayCommand, sshGatewayPublicKey, rateLimit, additionalProperties);
   }
 
   @Override
@@ -595,7 +595,7 @@ public class DaytonaConfiguration {
     sb.append("    defaultSnapshot: ").append(toIndentedString(defaultSnapshot)).append("\n");
     sb.append("    dashboardUrl: ").append(toIndentedString(dashboardUrl)).append("\n");
     sb.append("    maxAutoArchiveInterval: ").append(toIndentedString(maxAutoArchiveInterval)).append("\n");
-    sb.append("    maintananceMode: ").append(toIndentedString(maintananceMode)).append("\n");
+    sb.append("    maintenanceMode: ").append(toIndentedString(maintenanceMode)).append("\n");
     sb.append("    environment: ").append(toIndentedString(environment)).append("\n");
     sb.append("    billingApiUrl: ").append(toIndentedString(billingApiUrl)).append("\n");
     sb.append("    analyticsApiUrl: ").append(toIndentedString(analyticsApiUrl)).append("\n");
@@ -621,10 +621,10 @@ public class DaytonaConfiguration {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>(Arrays.asList("version", "posthog", "oidc", "linkedAccountsEnabled", "announcements", "pylonAppId", "proxyTemplateUrl", "proxyToolboxUrl", "defaultSnapshot", "dashboardUrl", "maxAutoArchiveInterval", "maintananceMode", "environment", "billingApiUrl", "analyticsApiUrl", "sshGatewayCommand", "sshGatewayPublicKey", "rateLimit"));
+    openapiFields = new HashSet<String>(Arrays.asList("version", "posthog", "oidc", "linkedAccountsEnabled", "announcements", "pylonAppId", "proxyTemplateUrl", "proxyToolboxUrl", "defaultSnapshot", "dashboardUrl", "maxAutoArchiveInterval", "maintenanceMode", "environment", "billingApiUrl", "analyticsApiUrl", "sshGatewayCommand", "sshGatewayPublicKey", "rateLimit"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>(Arrays.asList("version", "oidc", "linkedAccountsEnabled", "announcements", "proxyTemplateUrl", "proxyToolboxUrl", "defaultSnapshot", "dashboardUrl", "maxAutoArchiveInterval", "maintananceMode", "environment"));
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("version", "oidc", "linkedAccountsEnabled", "announcements", "proxyTemplateUrl", "proxyToolboxUrl", "defaultSnapshot", "dashboardUrl", "maxAutoArchiveInterval", "maintenanceMode", "environment"));
   }
 
   /**
