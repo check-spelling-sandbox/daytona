@@ -212,7 +212,7 @@ module DaytonaApiClient
       invalid_properties
     end
 
-    # Check to see if the all the properties in the model are valid
+    # Check to see if all the properties in the model are valid
     # @return true if the model is valid
     def valid?
       warn '[DEPRECATED] the `valid?` method is obsolete'
