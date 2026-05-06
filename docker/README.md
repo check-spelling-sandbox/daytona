@@ -147,7 +147,7 @@ OIDC_AUDIENCE=your_custom_api_identifier
 OIDC_MANAGEMENT_API_ENABLED=true
 OIDC_MANAGEMENT_API_CLIENT_ID=your_m2m_app_client_id
 OIDC_MANAGEMENT_API_CLIENT_SECRET=your_m2m_app_client_secret
-OIDC_MANAGEMENT_API_AUDIENCE=your_auth0_managment_api_identifier
+OIDC_MANAGEMENT_API_AUDIENCE=your_auth0_management_api_identifier
 ```
 
 ### Proxy Service Configuration
