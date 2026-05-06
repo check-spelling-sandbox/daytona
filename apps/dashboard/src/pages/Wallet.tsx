@@ -289,7 +289,7 @@ const Wallet = () => {
                         </>
                       ) : (
                         <>
-                          Verify your email address to recieve $100 of credits.
+                          Verify your email address to receive $100 of credits.
                           <br />A verification email was sent to you.
                         </>
                       )}
