@@ -814,7 +814,7 @@ export class OrganizationUsageService {
    *
    * If a user action will result in increased quota usage, we will first increment the pending usage.
    *
-   * When the user action is complete, this pending usage will be transfered to the actual usage.
+   * When the user action is complete, this pending usage will be transferred to the actual usage.
    *
    * As a safeguard, an expiration time is set on the pending usage cache to prevent lockout for new operations.
    *
@@ -923,7 +923,7 @@ export class OrganizationUsageService {
    *
    * If a user action will result in increased quota usage, we will first increment the pending usage.
    *
-   * When the user action is complete, this pending usage will be transfered to the actual usage.
+   * When the user action is complete, this pending usage will be transferred to the actual usage.
    *
    * @param organizationId
    * @param regionId
@@ -980,7 +980,7 @@ export class OrganizationUsageService {
    *
    * If a user action will result in increased quota usage, we will first increment the pending usage.
    *
-   * When the user action is complete, this pending usage will be transfered to the actual usage.
+   * When the user action is complete, this pending usage will be transferred to the actual usage.
    *
    * As a safeguard, an expiration time is set on the pending usage cache to prevent lockout for new operations.
    *
@@ -1016,7 +1016,7 @@ export class OrganizationUsageService {
    *
    * If a user action will result in increased quota usage, we will first increment the pending usage.
    *
-   * When the user action is complete, this pending usage will be transfered to the actual usage.
+   * When the user action is complete, this pending usage will be transferred to the actual usage.
    *
    * @param organizationId
    * @param snapshotCount - If provided, the count of snapshots to decrement.
@@ -1048,7 +1048,7 @@ export class OrganizationUsageService {
    *
    * If a user action will result in increased quota usage, we will first increment the pending usage.
    *
-   * When the user action is complete, this pending usage will be transfered to the actual usage.
+   * When the user action is complete, this pending usage will be transferred to the actual usage.
    *
    * As a safeguard, an expiration time is set on the pending usage cache to prevent lockout for new operations.
    *
@@ -1084,7 +1084,7 @@ export class OrganizationUsageService {
    *
    * If a user action will result in increased quota usage, we will first increment the pending usage.
    *
-   * When the user action is complete, this pending usage will be transfered to the actual usage.
+   * When the user action is complete, this pending usage will be transferred to the actual usage.
    *
    * @param organizationId
    * @param volumeCount - If provided, the count of volumes to decrement.
