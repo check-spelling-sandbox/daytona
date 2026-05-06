@@ -18,7 +18,7 @@ import FormSelectInput from '../../Inputs/SelectInput'
 import StackedInputFormControl from '../../Inputs/StackedInputFormControl'
 import { useEffect } from 'react'
 
-// TODO - Currently, snapshot selection is not supported in the Playground, so props are hardcoded to an empty array and false for loading. We keep snapshot parts commented to enable it in future if requested by users. Also, sandbox creation and code snippet generation suppoort snapshot selection, so they will work when snapshot selection is enabled in the UI without requiring any additional changes. Currently, the snapshot value is fixed to 'Default'
+// TODO - Currently, snapshot selection is not supported in the Playground, so props are hardcoded to an empty array and false for loading. We keep snapshot parts commented to enable it in future if requested by users. Also, sandbox creation and code snippet generation support snapshot selection, so they will work when snapshot selection is enabled in the UI without requiring any additional changes. Currently, the snapshot value is fixed to 'Default'
 type SandboxManagementParametersProps = {
   snapshotsData: Array<SnapshotDto>
   snapshotsLoading: boolean
