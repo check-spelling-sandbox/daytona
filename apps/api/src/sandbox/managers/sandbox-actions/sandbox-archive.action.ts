@@ -86,7 +86,7 @@ export class SandboxArchiveAction extends SandboxAction {
     }
 
     //  when the backup is completed, destroy the sandbox on the runner
-    //  and deassociate the sandbox from the runner
+    //  and disassociate the sandbox from the runner
     const runner = await this.runnerService.findOneOrFail(sandbox.runnerId)
     const runnerAdapter = await this.runnerAdapterFactory.create(runner)
 
