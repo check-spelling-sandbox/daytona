@@ -314,7 +314,7 @@ export function FileTreePane({
       const node = getCachedNode(item.getId()) ?? item.getItemData() ?? createFallbackNode(item.getId())
       openNode(node.path)
     },
-    seperateDragHandle: true,
+    separateDragHandle: true,
     dataLoader: {
       getItem: async (itemId) => getCachedNode(itemId) ?? createFallbackNode(itemId),
       getChildrenWithData: async (itemId) => loadDirectory(itemId),
