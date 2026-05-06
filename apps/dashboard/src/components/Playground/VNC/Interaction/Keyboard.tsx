@@ -80,7 +80,7 @@ const VNCKeyboardOperations: React.FC<VNCInteractionOptionsSectionComponentProps
   // Disable logic ensures that this method is called when ComputerUseClient exists -> we use as ComputerUse to silence TS compiler
   const keyboardActionAPICall: PlaygroundActionInvokeApi = async (keyboardActionFormData) => {
     const KeyboardActionsClient = (ComputerUseClient as ComputerUse).keyboard
-    // All keyboard actions have Promise<void> return type -> we don't need the reponse
+    // All keyboard actions have Promise<void> return type -> we don't need the response
     switch (keyboardActionFormData.methodName) {
       case KeyboardActions.HOTKEY:
         await KeyboardActionsClient[KeyboardActions.HOTKEY](hotKeyParams.keys)
