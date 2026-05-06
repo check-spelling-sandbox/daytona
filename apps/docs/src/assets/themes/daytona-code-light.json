@@ -124,7 +124,7 @@
       }
     },
     {
-      "name": "Variable parametar",
+      "name": "Variable parameter",
       "scope": ["variable.parameter"],
       "settings": {
         "foreground": "#8558DE"
