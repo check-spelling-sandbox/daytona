@@ -2365,13 +2365,13 @@ export class SandboxService {
       const twentyFourHoursAgo = new Date()
       twentyFourHoursAgo.setHours(twentyFourHoursAgo.getHours() - 24)
 
-      const destroyedSandboxs = await this.sandboxRepository.delete({
+      const destroyedSandboxes = await this.sandboxRepository.delete({
         state: SandboxState.DESTROYED,
         updatedAt: LessThan(twentyFourHoursAgo),
       })
 
-      if (destroyedSandboxs.affected > 0) {
-        this.logger.debug(`Cleaned up ${destroyedSandboxs.affected} destroyed sandboxes`)
+      if (destroyedSandboxes.affected > 0) {
+        this.logger.debug(`Cleaned up ${destroyedSandboxes.affected} destroyed sandboxes`)
       }
     } finally {
       await this.redisLockProvider.unlock(lockKey)
@@ -2392,14 +2392,14 @@ export class SandboxService {
       const twentyFourHoursAgo = new Date()
       twentyFourHoursAgo.setHours(twentyFourHoursAgo.getHours() - 24)
 
-      const destroyedSandboxs = await this.sandboxRepository.delete({
+      const destroyedSandboxes = await this.sandboxRepository.delete({
         state: SandboxState.BUILD_FAILED,
         desiredState: SandboxDesiredState.DESTROYED,
         updatedAt: LessThan(twentyFourHoursAgo),
       })
 
-      if (destroyedSandboxs.affected > 0) {
-        this.logger.debug(`Cleaned up ${destroyedSandboxs.affected} build failed sandboxes`)
+      if (destroyedSandboxes.affected > 0) {
+        this.logger.debug(`Cleaned up ${destroyedSandboxes.affected} build failed sandboxes`)
       }
     } finally {
       await this.redisLockProvider.unlock(lockKey)
