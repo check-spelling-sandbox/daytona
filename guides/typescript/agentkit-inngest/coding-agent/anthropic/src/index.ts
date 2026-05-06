@@ -93,7 +93,7 @@ Note: Always use double quotes (") for the outer 'content' string property. When
     }),
     handler: async ({ files }, { network }) => {
       try {
-        // Handle case when model hallucinates and passes files as string instead of specificed array format
+        // Handle case when model hallucinates and passes files as string instead of specified array format
         if (typeof files === 'string') {
           try {
             files = JSON.parse(files)
