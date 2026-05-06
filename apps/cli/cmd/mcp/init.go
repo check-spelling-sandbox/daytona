@@ -53,7 +53,7 @@ var InitCmd = &cobra.Command{
 }
 
 func injectConfig(agentConfigFilePath, mcpLogFilePath string) error {
-	daytonaMcpConfig, err := getDayonaMcpConfig(mcpLogFilePath)
+	daytonaMcpConfig, err := getDaytonaMcpConfig(mcpLogFilePath)
 	if err != nil {
 		return err
 	}

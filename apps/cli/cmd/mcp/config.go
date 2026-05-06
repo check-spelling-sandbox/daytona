@@ -35,7 +35,7 @@ var ConfigCmd = &cobra.Command{
 			return fmt.Errorf("unsupported OS: %s", runtime.GOOS)
 		}
 
-		daytonaMcpConfig, err := getDayonaMcpConfig(mcpLogFilePath)
+		daytonaMcpConfig, err := getDaytonaMcpConfig(mcpLogFilePath)
 		if err != nil {
 			return err
 		}
@@ -55,7 +55,7 @@ var ConfigCmd = &cobra.Command{
 	},
 }
 
-func getDayonaMcpConfig(mcpLogFilePath string) (map[string]interface{}, error) {
+func getDaytonaMcpConfig(mcpLogFilePath string) (map[string]interface{}, error) {
 	homeDir, err := os.UserHomeDir()
 	if err != nil {
 		return nil, err
