@@ -42,7 +42,7 @@ func main() {
   }
  }()
   
-    // Default WaitForStart is true, but can be overriden for more async behavior
+    // Default WaitForStart is true, but can be overridden for more async behavior
     sandbox, buildLogs, err := client.Create(ctx, params,
   daytona.WithTimeout(90*time.Second),
  )
