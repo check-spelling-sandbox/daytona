@@ -7005,7 +7005,7 @@ paths:
                 items:
                   $ref: "#/components/schemas/Workspace"
                 type: array
-          description: List of all workspacees
+          description: List of all workspaces
       security:
       - bearer: []
       - oauth2:

@@ -87,7 +87,7 @@ export class WorkspaceController {
   })
   @ApiResponse({
     status: 200,
-    description: 'List of all workspacees',
+    description: 'List of all workspaces',
     type: [WorkspaceDto],
   })
   @ApiQuery({
@@ -109,8 +109,8 @@ export class WorkspaceController {
     @Query('labels') labelsQuery?: string,
   ): Promise<WorkspaceDto[]> {
     const labels = labelsQuery ? JSON.parse(labelsQuery) : {}
-    const workspacees = await this.workspaceService.findAllDeprecated(authContext.organizationId, labels)
-    const dtos = workspacees.map(async (workspace) => {
+    const workspaces = await this.workspaceService.findAllDeprecated(authContext.organizationId, labels)
+    const dtos = workspaces.map(async (workspace) => {
       const dto = WorkspaceDto.fromSandbox(workspace)
       return dto
     })

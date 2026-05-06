@@ -1127,7 +1127,7 @@ public class WorkspaceApi {
      <table border="1">
        <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
-        <tr><td> 200 </td><td> List of all workspacees </td><td>  -  </td></tr>
+        <tr><td> 200 </td><td> List of all workspaces </td><td>  -  </td></tr>
      </table>
      * @deprecated
      */
@@ -1208,7 +1208,7 @@ public class WorkspaceApi {
      <table border="1">
        <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
-        <tr><td> 200 </td><td> List of all workspacees </td><td>  -  </td></tr>
+        <tr><td> 200 </td><td> List of all workspaces </td><td>  -  </td></tr>
      </table>
      * @deprecated
      */
@@ -1230,7 +1230,7 @@ public class WorkspaceApi {
      <table border="1">
        <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
-        <tr><td> 200 </td><td> List of all workspacees </td><td>  -  </td></tr>
+        <tr><td> 200 </td><td> List of all workspaces </td><td>  -  </td></tr>
      </table>
      * @deprecated
      */
@@ -1254,7 +1254,7 @@ public class WorkspaceApi {
      <table border="1">
        <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
-        <tr><td> 200 </td><td> List of all workspacees </td><td>  -  </td></tr>
+        <tr><td> 200 </td><td> List of all workspaces </td><td>  -  </td></tr>
      </table>
      * @deprecated
      */
